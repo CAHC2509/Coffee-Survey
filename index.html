@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coffee Shop Survey</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+      <br><h1 id="title">☕ Dream Coffee Shop Survey ☕</h1>
+    <p id="description">Thank you for taking the time to help us improve Dream Coffee Shop</p>
+    </header>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input type="text" id="name" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email <input type="email" id="email" placeholder="Enter your email" required /></label>
+        <label id="number-label">Age (optional) <input type="number" name="age" min="15" max="99" placeholder="Age" /></label>
+      </fieldset>
+      <fieldset>
+        <label>Select the option that best suits you 
+          <select id="dropdown">
+            <option value="">(Select one)</option>
+            <option value="1">Student</option>
+            <option value="2">Full time job</option>
+            <option value="3">Mid time job</option>
+            <option value="4">Prefer don't say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Would you recommend Dream Coffee Shop to a friend?
+          <label><input type="radio" name="recomend" class="inline" /> Definitely</label>
+          <label><input type="radio" name="recomend" class="inline" /> Maybe</label>
+          <label><input type="radio" name="recomend" class="inline" /> Not sure</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>What would you like to see improved?
+          <label><input type="checkbox" id="cbox1" value="lunches" class="inline" /> Lunches</label>
+          <label><input type="checkbox" id="cbox2" value="dinners" class="inline" /> Dinners</label>
+          <label><input type="checkbox" id="cbox3" value="more-drinks" class="inline" /> More drinks</label>
+          <label><input type="checkbox" id="cbox4" value="expand-menu" class="inline" /> Expand menu</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Any comments or suggestions?<textarea class="comment" name="comment" placeholder="Enter your comment here... ☕"></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+    </div>
+  </body>
+</html>
